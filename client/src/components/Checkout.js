@@ -13,6 +13,7 @@ export default function Checkout({subtotal}) {
     function tokenHander(token)
     {
         console.log(token);
+        console.log(subtotal)
         dispatch(placeOrder(token , subtotal))
 
     }
@@ -28,8 +29,8 @@ export default function Checkout({subtotal}) {
             amount={subtotal*100}
             shippingAddress
             token={tokenHander}
-            stripeKey='pk_test_51IYnC0SIR2AbPxU0TMStZwFUoaDZle9yXVygpVIzg36LdpO8aSG8B9j2C0AikiQw2YyCI8n4faFYQI5uG3Nk5EGQ00lCfjXYvZ'
-            currency='INR'
+            stripeKey='pk_test_51NRMcrK9cZdExoXXSXL7jYIBEZ4oJQrZc2QaA5NZW98fILlrt2p8snlqPpC4OspsirEHg7agobmQHcfuNkUXnd7p00hMXlf4xj'
+            // currency='USD'
             >
 
                   
